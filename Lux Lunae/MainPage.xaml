@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Lux_Lunae.MainPage"
+             BackgroundColor="#220061">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="15"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <Image
+                Source="tower.png"
+                HeightRequest="200"
+                HorizontalOptions="Center" />
+
+            <Label
+                Text="Lux Lunae"
+                TextColor="AntiqueWhite"
+                FontSize="52"
+                HorizontalOptions="Center" 
+             />
+
+            <Label
+                Text="Light of the Moon"
+                FontSize="18"
+                HorizontalOptions="Center" 
+                TextColor="AntiqueWhite"
+                x:Name="TextLabel"/>
+
+            <Button
+                Text="Click me"
+                HorizontalOptions="Center"
+                x:Name="CounterBtn"/>
+
+            <Editor
+                Placeholder="Enter something!"
+                HeightRequest="50"
+                x:Name="TextEditor"/>
+            <Button
+                Text="Save!"
+                HorizontalOptions="Center"
+                x:Name="SaveBtn"/>
+            <Label
+                Text="NULL"
+                HorizontalOptions="Center"
+                FontSize="18"
+                TextColor="AntiqueWhite"
+                x:Name="SavedTextLabel"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
