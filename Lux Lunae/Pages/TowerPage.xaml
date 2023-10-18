@@ -1,29 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:drawable="clr-namespace:Lux_Lunae.Pages.TowerGraphics"
              x:Class="Lux_Lunae.TowerPage"
              BackgroundColor="#220061">
 
-
-    <ContentPage.Resources>
-        <drawable:TowerGraphicCanvas x:Key="drawable"/>
-    </ContentPage.Resources>
-    <ScrollView>
-        <VerticalStackLayout
-            Spacing="15"
-            Padding="30,0"
-            VerticalOptions="Center">
-
-            <GraphicsView Drawable="{StaticResource drawable}"
-                          WidthRequest="350"
-                          HeightRequest="650"
-                          x:Name="drawable"/>
-
-            <Button
-                Text="Do the thing!"
-                x:Name="button"/>
+    <Grid>
+        <Image Source="rivermoongraphic.png"
+               Aspect="AspectFill"/>
+        <VerticalStackLayout>
+            
         </VerticalStackLayout>
-    </ScrollView>
+    </Grid>
 
 </ContentPage>
