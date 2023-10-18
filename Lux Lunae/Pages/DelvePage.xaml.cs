@@ -1,14 +1,16 @@
-﻿namespace Lux_Lunae
+﻿using Lux_Lunae.Resources.Database;
+using SQLite;
+
+namespace Lux_Lunae
 {
-    public partial class MainPage : ContentPage
+    public partial class DelvePage : ContentPage
     {
         int count = 0;
 
-        public MainPage()
+        public DelvePage()
         {
             InitializeComponent();
             CounterBtn.Clicked += OnCounterClicked;
-            SaveBtn.Clicked += OnSaveBtnClicked;
         }
 
         private void OnCounterClicked(object sender, EventArgs e)
@@ -20,12 +22,8 @@
             else
                 CounterBtn.Text = $"Clicked {count} times";
 
-            SemanticScreenReader.Announce(CounterBtn.Text);
-        }
-
-        private void OnSaveBtnClicked(object sender, EventArgs e)
-        {
-            SavedTextLabel.Text = TextEditor.Text;
         }
     }
 }
+//public const double MyFontSize = 28;
+//x:Static Member=mycdoe:MainPage.MyFontSize

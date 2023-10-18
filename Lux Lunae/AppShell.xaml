@@ -5,10 +5,24 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:Lux_Lunae"
     Shell.FlyoutBehavior="Disabled">
+ 
+    <TabBar>
+        <Tab Title="Daily">
+            <ShellContent ContentTemplate="{DataTemplate local:DailyPage}" Route="daily"/>
+        </Tab>
+        <Tab Title="Sanctum">
+            <ShellContent ContentTemplate="{DataTemplate local:SanctumPage}" Route="sanctum"/>
+        </Tab>
+        <Tab Title="Delve">
+            <ShellContent ContentTemplate="{DataTemplate local:DelvePage}" Route="delve"/>
+        </Tab>
+        <Tab Title="Journal">
+            <ShellContent ContentTemplate="{DataTemplate local:JournalPage}" Route="journal"/>
+        </Tab>
+        <Tab Title="Tower">
+            <ShellContent ContentTemplate="{DataTemplate local:TowerPage}" Route="tower"/>
+        </Tab>
+    </TabBar>
 
-    <ShellContent
-        Title="Begin Adventure!"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
 
 </Shell>

@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Lux_Lunae.DailyPage"
+             BackgroundColor="#220061">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="15"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+
+            <Label
+                Text="Daily Questions"
+                BackgroundColor="LemonChiffon"
+                x:Name="dQuestion"/>
+            <Button
+                Text="How Many Bois?"
+                HorizontalOptions="Center"
+                x:Name="boi"/>
+                
+
+
+            <HorizontalStackLayout
+                Spacing="15"
+                Padding="30, 0"
+                HorizontalOptions="Center">
+                <Label 
+                    Text="Highest Win Streak"
+                    BackgroundColor="LemonChiffon"/>
+                <Label 
+                    Text="Current Win Streak"
+                    BackgroundColor="LemonChiffon"/>
+            </HorizontalStackLayout>
+
+            <Label
+                Text="Daily Task"
+                BackgroundColor="LemonChiffon"/>
+            <Grid>
+                
+            </Grid>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
